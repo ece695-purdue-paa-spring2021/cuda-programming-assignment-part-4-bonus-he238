@@ -122,13 +122,51 @@
 		bool activation;
 	} ConvLayerArgs;
 
-	extern int makeTensor (float ** t, TensorShape & shape);
-	extern int makeVector (float ** v, uint64_t size);
 
 
-	const TensorShape AlexL1_InShape 		= {1, 3, 227, 227};
+
+
+
+	const TensorShape AlexL1_InShape 	= {1, 3, 227, 227};
 	const TensorShape AlexL1_FilterShape	= {96, 3, 11, 11};
-	const ConvLayerArgs AlexL1_ConvArgs 	= {0, 0, 4, 4, false};
+	const ConvLayerArgs AlexL1_ConvArgs 	= {0, 0, 4, 4, true};
+
+	const TensorShape AlexL2_InShape 	= {1, 96, 55, 55};
+	const PoolLayerArgs_t AlexL2_PoolArgs 	= {PoolOp::MaxPool, 3, 3, 2, 2};
+
+	const TensorShape AlexL3_InShape 	= {1, 96, 27, 27};
+	const TensorShape AlexL3_FilterShape	= {256, 96, 5, 5};
+	const ConvLayerArgs AlexL3_ConvArgs 	= {0, 0, 1, 1, true};
+
+	const TensorShape AlexL4_InShape 	= {1, 256, 27, 27};
+	const PoolLayerArgs_t AlexL4_PoolArgs 	= {PoolOp::MaxPool, 3, 3, 2, 2};
+
+
+	const TensorShape AlexL5_InShape 	= {1, 256, 13, 13};
+	const TensorShape AlexL5_FilterShape	= {384, 256, 3, 3};
+	const ConvLayerArgs AlexL5_ConvArgs 	= {0, 0, 1, 1, true};
+
+	const TensorShape AlexL6_InShape 	= {1, 384, 13, 13};
+	const TensorShape AlexL6_FilterShape	= {384, 384, 3, 3};
+	const ConvLayerArgs AlexL6_ConvArgs 	= {0, 0, 1, 1, true};
+
+	const TensorShape AlexL7_InShape 	= {1, 384, 13, 13};
+	const TensorShape AlexL7_FilterShape	= {256, 384, 3, 3};
+	const ConvLayerArgs AlexL7_ConvArgs 	= {0, 0, 1, 1, true};
+
+	const TensorShape AlexL8_InShape 	= {1, 256, 13, 13};
+	const PoolLayerArgs_t AlexL8_PoolArgs 	= {PoolOp::MaxPool, 3, 3, 2, 2};
+
+	const TensorShape AlexL9_InShape 	= {1, 256, 6, 6};
+	const TensorShape AlexL9_aShape = {1, 1, 1, 9216};
+	const TensorShape AlexL9_bShape = {1, 1, 9216, 4096};
+	const TensorShape AlexL9_cShape = {1, 1, 1, 4096};
+
+
+	const TensorShape AlexL10_InShape 	= {1, 1, 1, 4096};
+	const TensorShape AlexL10_aShape = {1, 1, 1, 4096};
+	const TensorShape AlexL10_bShape = {1, 1, 4096, 4096};
+	const TensorShape AlexL10_cShape = {1, 1, 1, 4096};
 
 	extern int runCpuConv (int argc, char ** argv);
 

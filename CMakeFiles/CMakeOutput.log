@@ -1,0 +1,778 @@
+The system is: Linux - 3.10.0-1127.8.2.el7.x86_64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/3.15.4/CompilerIdCXX/a.out"
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler: /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/nvcc 
+Build flags: 
+Id flags:  -v;--keep;--keep-dir;tmp
+
+The output was:
+0
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin
+#$ _THERE_=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ TOP=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..
+#$ NVVMIR_LIBRARY_DIR=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../lib:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/extras/CUPTI/lib64:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib:/usr/lib64/nvidia:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib:/usr/lib64:/usr/lib64:/opt/thinlinc/lib64:/opt/thinlinc/lib
+#$ PATH=/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/cent7/xalt/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/ibutils/bin:/opt/hpss/bin:/opt/hsi/bin
+#$ INCLUDES="-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"  
+#$ LIBRARIES=  "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -std=c++14 -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --gnu_version=60300 --allow_managed   -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" 
+#$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 "--image=profile=sm_30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image=profile=compute_30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" --cuda
+#$ gcc -std=c++14 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ cudafe++ --c++14 --gnu_version=60300 --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ gcc -std=c++14 -D__CUDA_ARCH__=300 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"   -m64 -o "tmp/CMakeCUDACompilerId.o" "tmp/CMakeCUDACompilerId.cudafe1.cpp" 
+#$ nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -o "tmp/a_dlink.sm_30.cubin"
+#$ fatbinary --create="tmp/a_dlink.fatbin" -64 -link "--image=profile=sm_30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+#$ gcc -std=c++14 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -m64 -o "tmp/a_dlink.o" "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/crt/link.stub" 
+#$ g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group 
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+
+The CUDA compiler identification is NVIDIA, found in "/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/3.15.4/CompilerIdCUDA/a.out"
+
+Parsed CUDA nvcc implicit link information from above output:
+  found 'PATH=' string: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/cent7/xalt/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/ibutils/bin:/opt/hpss/bin:/opt/hsi/bin]
+  found 'LIBRARIES=' string: ["-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++14 --gnu_version=60300 --allow_managed   -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_30 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 "--image=profile=sm_30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image=profile=compute_30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" --cuda]
+  considering line: [gcc -std=c++14 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++14 --gnu_version=60300 --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=300 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"   -m64 -o "tmp/CMakeCUDACompilerId.o" "tmp/CMakeCUDACompilerId.cudafe1.cpp" ]
+  considering line: [nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -o "tmp/a_dlink.sm_30.cubin"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 -link "--image=profile=sm_30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -std=c++14 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -m64 -o "tmp/a_dlink.o" "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/crt/link.stub" ]
+  considering line: [g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+    extracted link line: [g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+    arg [-std=c++14] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs]
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs]
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit dirs: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs;/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+  implicit fwks: []
+
+
+Parsed CUDA nvcc include information from above output:
+  found 'PATH=' string: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/cent7/xalt/bin:/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin:/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/ibutils/bin:/opt/hpss/bin:/opt/hsi/bin]
+  found 'LIBRARIES=' string: ["-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=300 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++14 --gnu_version=60300 --allow_managed   -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_30 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 "--image=profile=sm_30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image=profile=compute_30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" --cuda]
+  considering line: [gcc -std=c++14 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" > "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++14 --gnu_version=60300 --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=300 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"   -m64 -o "tmp/CMakeCUDACompilerId.o" "tmp/CMakeCUDACompilerId.cudafe1.cpp" ]
+  considering line: [nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -o "tmp/a_dlink.sm_30.cubin"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 -link "--image=profile=sm_30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -std=c++14 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"    -D__CUDACC_VER_MAJOR__=10 -D__CUDACC_VER_MINOR__=0 -D__CUDACC_VER_BUILD__=130 -m64 -o "tmp/a_dlink.o" "/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/crt/link.stub" ]
+  considering line: [g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+    extracted link line: [g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++]
+  found 'INCLUDES=' string: ["-I/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include"  ]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -m64 -o "a.out" -std=c++14 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs" "-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64" -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+    arg [-std=c++14] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs]
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64/stubs] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs]
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//lib64] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit dirs: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs;/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_6a34e/fast && /bin/gmake -f CMakeFiles/cmTC_6a34e.dir/build.make CMakeFiles/cmTC_6a34e.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a34e.dir/testCXXCompiler.cxx.o
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++     -o CMakeFiles/cmTC_6a34e.dir/testCXXCompiler.cxx.o -c /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_6a34e
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a34e.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++       CMakeFiles/cmTC_6a34e.dir/testCXXCompiler.cxx.o  -o cmTC_6a34e 
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_60e55/fast && /bin/gmake -f CMakeFiles/cmTC_60e55.dir/build.make CMakeFiles/cmTC_60e55.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++    -v -o CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -c /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -quiet -v -D_GNU_SOURCE /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccui1V7c.s
+GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include
+ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include
+ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include
+ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include
+ /usr/local/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d1123adcc8f467481cd1cc2e3567d5f7
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccui1V7c.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_60e55
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60e55.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++      -v CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_60e55 
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++
+COLLECT_LTO_WRAPPER=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60e55' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2 -plugin /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so -plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMDVmga.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60e55 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib -L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib -L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib -L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib -L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../.. CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60e55' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+    add: [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+    add: [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+    add: [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+    add: [/usr/local/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include] ==> [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include] ==> [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include] ==> [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include] ==> [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/backward]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include;/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include;/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include;/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/x86_64-pc-linux-gnu;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/backward;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include;/usr/local/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake cmTC_60e55/fast && /bin/gmake -f CMakeFiles/cmTC_60e55.dir/build.make CMakeFiles/cmTC_60e55.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++    -v -o CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -c /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -quiet -v -D_GNU_SOURCE /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccui1V7c.s]
+  ignore line: [GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d1123adcc8f467481cd1cc2e3567d5f7]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccui1V7c.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_60e55]
+  ignore line: [/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60e55.dir/link.txt --verbose=1]
+  ignore line: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++      -v CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_60e55 ]
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60e55' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2 -plugin /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so -plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMDVmga.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60e55 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib -L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib -L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib -L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib -L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../.. CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMDVmga.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_60e55] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o] ==> ignore
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib] ==> dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib] ==> dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib] ==> dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib] ==> dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..]
+    arg [CMakeFiles/cmTC_60e55.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib] ==> [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib] ==> [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib] ==> [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib] ==> [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0;/lib64;/usr/lib64;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib;/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib;/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib;/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib;/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+  implicit fwks: []
+
+
+Determining if the CUDA compiler works passed with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_33eab/fast && /bin/gmake -f CMakeFiles/cmTC_33eab.dir/build.make CMakeFiles/cmTC_33eab.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_33eab.dir/main.cu.o
+/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/nvcc     -x cu -c /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp/main.cu -o CMakeFiles/cmTC_33eab.dir/main.cu.o
+Linking CUDA executable cmTC_33eab
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33eab.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++   CMakeFiles/cmTC_33eab.dir/main.cu.o -o cmTC_33eab  -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs" -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_7b525/fast && /bin/gmake -f CMakeFiles/cmTC_7b525.dir/build.make CMakeFiles/cmTC_7b525.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o
+/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/nvcc    -Xcompiler=-v -x cu -c /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -E -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDA_ARCH__=300 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=0 -D __CUDACC_VER_BUILD__=130 -include cuda_runtime.h /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -m64 -mtune=generic -march=x86-64 -std=c++14
+ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include
+ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include
+ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include
+ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include
+ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include
+ /usr/local/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed
+ /usr/include
+End of search list.
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64'
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-std=c++14' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -E -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=0 -D __CUDACC_VER_BUILD__=130 -include cuda_runtime.h /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -m64 -mtune=generic -march=x86-64 -std=c++14
+ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include
+ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include
+ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include
+ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include
+ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include
+ /usr/local/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed
+ /usr/include
+End of search list.
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c++14' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64'
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDA_ARCH__=300 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0003abc7_00000000-5_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_0003abc7_00000000-5_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -std=c++14 -version -o /tmp/ccvoC2ek.s
+GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include
+ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include
+ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include
+ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include
+ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include
+ /usr/local/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d1123adcc8f467481cd1cc2e3567d5f7
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+ as -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include --64 -o CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o /tmp/ccvoC2ek.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64'
+Linking CUDA executable cmTC_7b525
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b525.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++  -v CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -o cmTC_7b525  -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs" -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs
+COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++
+COLLECT_LTO_WRAPPER=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o
+Thread model: posix
+gcc version 6.3.0 (Spack GCC) 
+COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b525' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2 -plugin /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so -plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVfyCGu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b525 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o -L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs -L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib -L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib -L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib -L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib -L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../.. CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b525' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include]
+    add: [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+    add: [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+    add: [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+    add: [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+    add: [/usr/local/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+    add: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include] ==> [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include] ==> [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include] ==> [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include] ==> [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/backward]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  collapse include dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/include;/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include;/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include;/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include;/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/x86_64-pc-linux-gnu;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include/c++/6.3.0/backward;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include;/usr/local/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed;/usr/include]
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/bin/gmake cmTC_7b525/fast && /bin/gmake -f CMakeFiles/cmTC_7b525.dir/build.make CMakeFiles/cmTC_7b525.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp']
+  ignore line: [Building CUDA object CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/nvcc    -Xcompiler=-v -x cu -c /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -E -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDA_ARCH__=300 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=0 -D __CUDACC_VER_BUILD__=130 -include cuda_runtime.h /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -m64 -mtune=generic -march=x86-64 -std=c++14]
+  ignore line: [ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64']
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -E -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=10 -D __CUDACC_VER_MINOR__=0 -D __CUDACC_VER_BUILD__=130 -include cuda_runtime.h /apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/share/cmake-3.15/Modules/CMakeCUDACompilerABI.cu -m64 -mtune=generic -march=x86-64 -std=c++14]
+  ignore line: [ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-D' '__CUDACC_VER_MAJOR__=10' '-D' '__CUDACC_VER_MINOR__=0' '-D' '__CUDACC_VER_BUILD__=130' '-include' 'cuda_runtime.h' '-m64' '-mtune=generic' '-march=x86-64']
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/cc1plus -quiet -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include -D_GNU_SOURCE -D __CUDA_ARCH__=300 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0003abc7_00000000-5_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_0003abc7_00000000-5_CMakeCUDACompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -std=c++14 -version -o /tmp/ccvoC2ek.s]
+  ignore line: [GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../include/c++/6.3.0/backward]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/include]
+  ignore line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Spack GCC) version 6.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 6.3.0, GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version 0.15]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d1123adcc8f467481cd1cc2e3567d5f7]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include --64 -o CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o /tmp/ccvoC2ek.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=300' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/apps/gilbreth/cuda-toolkit/cuda-10.0.130/bin/..//include' '-m64' '-o' 'CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CUDA executable cmTC_7b525]
+  ignore line: [/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b525.dir/link.txt --verbose=1]
+  ignore line: [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++  -v CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -o cmTC_7b525  -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs" -L"/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64" -lcudadevrt -lcudart_static -lrt -lpthread -ldl]
+  ignore line: [Reading specs from /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/specs]
+  ignore line: [COLLECT_GCC=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-6.3.0-234aoxywcmvkatghm2ebfy7jbtnc6vcn/spack-src/configure --prefix=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-libiconv-prefix=/apps/spack/scholar/fall20/apps/libiconv/1.16-gcc-4.8.5-qazxaa4 --with-mpfr=/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy --with-gmp=/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7 --with-system-zlib --with-mpc=/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao --with-isl=/apps/spack/scholar/fall20/apps/isl/0.18-gcc-4.8.5-igs522o]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 6.3.0 (Spack GCC) ]
+  ignore line: [COMPILER_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/:/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib/:/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib/:/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib/:/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib/:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b525' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs' '-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2 -plugin /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so -plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVfyCGu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b525 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o -L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs -L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64 -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib -L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib -L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib -L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib -L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib -L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../.. CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/libexec/gcc/x86_64-pc-linux-gnu/6.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccVfyCGu.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib:/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7b525] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtbegin.o] ==> ignore
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs]
+    arg [-L/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64] ==> dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib] ==> dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib] ==> dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib] ==> dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib] ==> dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+    arg [-L/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..] ==> dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..]
+    arg [CMakeFiles/cmTC_7b525.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs]
+  collapse library dir [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64] ==> [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64/../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../../../lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib] ==> [/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib] ==> [/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib] ==> [/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib] ==> [/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+  collapse library dir [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0/../../..] ==> [/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64/stubs;/apps/gilbreth/cuda-toolkit/cuda-10.0.130/lib64;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib64;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib/gcc/x86_64-pc-linux-gnu/6.3.0;/lib64;/usr/lib64;/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/lib;/apps/spack/scholar/fall20/apps/zlib/1.2.11-gcc-6.3.0-ckrn4o3/lib;/apps/spack/scholar/fall20/apps/mpc/1.1.0-gcc-4.8.5-eogmmao/lib;/apps/spack/scholar/fall20/apps/mpfr/3.1.6-gcc-4.8.5-nsgsjfy/lib;/apps/spack/scholar/fall20/apps/gmp/6.1.2-gcc-4.8.5-zn55wh7/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_059d0/fast && /bin/gmake -f CMakeFiles/cmTC_059d0.dir/build.make CMakeFiles/cmTC_059d0.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_059d0.dir/CheckIncludeFile.cxx.o
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++     -o CMakeFiles/cmTC_059d0.dir/CheckIncludeFile.cxx.o -c /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_059d0
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_059d0.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++       CMakeFiles/cmTC_059d0.dir/CheckIncludeFile.cxx.o  -o cmTC_059d0 
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/gmake cmTC_2c00b/fast && /bin/gmake -f CMakeFiles/cmTC_2c00b.dir/build.make CMakeFiles/cmTC_2c00b.dir/build
+gmake[1]: Entering directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c00b.dir/CheckFunctionExists.cxx.o
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2c00b.dir/CheckFunctionExists.cxx.o -c /home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_2c00b
+/apps/spack/scholar/fall20/apps/cmake/3.15.4-gcc-6.3.0-j762ehf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c00b.dir/link.txt --verbose=1
+/apps/spack/scholar/fall20/apps/gcc/6.3.0-gcc-4.8.5-234aoxy/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2c00b.dir/CheckFunctionExists.cxx.o  -o cmTC_2c00b -lpthread 
+gmake[1]: Leaving directory `/home/he238/cuda-programming-assignment-part-4-bonus-he238/CMakeFiles/CMakeTmp'
+
+
+
